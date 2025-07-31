@@ -2,6 +2,7 @@ import pygame
 from constants import *
 from player import Player
 
+
 def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -22,7 +23,7 @@ def main():
 
         updatable.update(dt)
 
-        screen.fill((0,0,0))
+        screen.fill((0, 0, 0))
 
         for item in drawable:
             item.draw(screen)
